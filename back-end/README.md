@@ -1,5 +1,3 @@
-# ticket-backend
-
 # back-end
 
 # make sure to navigate to the project directory
