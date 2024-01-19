@@ -9,7 +9,7 @@
   },
   "builds": [
     {
-      "src": "node index.jsx ", 
+      "src": "node index.jsx ",
       "use": "@vercel/node"
     }
   ],
@@ -22,6 +22,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "mongodb": "^6.3.0",
-    "mongoose": "^8.1.0"
+    "mongoose": "^8.1.0",
+    "vercel": "^33.1.0"
   }
 }
