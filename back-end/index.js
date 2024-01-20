@@ -12,26 +12,19 @@ app.use(express.json());
 
 // Connect to the database
 const PORT = process.env.PORT || 3000;
-mongoose.connect("mongodb+srv://athilakshmi:8Ia2Tk4wZLqPSvgI@cluster0.bcy8b9g.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
   console.log('Connected to MongoDB');
 });
-app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳')
-})
-
-app.get('/about', (req, res) => {
-  res.send('This is my about route..... ')
-})
 
 // Export the Express API
 // module.exports = app
 // //Routers
-// app.use('/api/support-agents', userRoutes);
-// app.use('/api/assigned-users', userRoutes);
-// app.use('/api/support-tickets', ticketRoutes);
+app.use('/api/support-agents', userRoutes);
+app.use('/api/assigned-users', userRoutes);
+app.use('/api/support-tickets', ticketRoutes);
 
 // Start the server
 app.listen(PORT, () => {
