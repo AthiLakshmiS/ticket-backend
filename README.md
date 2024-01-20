@@ -1,9 +1,11 @@
 # ticket-backend
 
-# back-end
+add env file
 
-# make sure to navigate to the project directory
+DB="YOUR DB URL"
+
+make sure to navigate to the project directory
+
 cd backend
 
-# command to run the project
 npm start
