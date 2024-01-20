@@ -12,7 +12,7 @@ app.use(express.json());
 
 // Connect to the database
 const PORT = process.env.PORT || 3000;
-mongoose.connect("mongodb+srv://athilakshmi:8Ia2Tk4wZLqPSvgI@cluster0.bcy8b9g.mongodb.net/?retryWrites=true&w=majority", { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.DB, { useNewUrlParser: true, useUnifiedTopology: true });
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
