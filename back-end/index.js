@@ -29,9 +29,9 @@ app.get('/about', (req, res) => {
 // Export the Express API
 // module.exports = app
 // //Routers
-app.use('/api/support-agents', userRoutes);
-app.use('/api/assigned-users', userRoutes);
-app.use('/api/support-tickets', ticketRoutes);
+// app.use('/api/support-agents', userRoutes);
+// app.use('/api/assigned-users', userRoutes);
+// app.use('/api/support-tickets', ticketRoutes);
 
 // Start the server
 app.listen(PORT, () => {
