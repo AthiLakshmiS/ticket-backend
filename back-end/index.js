@@ -18,13 +18,13 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
   console.log('Connected to MongoDB');
 });
-app.get('/', (req, res) => {
-  res.send('Hey this is my API running 🥳')
-})
+// app.get('/', (req, res) => {
+//   res.send('Hey this is my API running 🥳')
+// })
 
-app.get('/about', (req, res) => {
-  res.send('This is my about route..... ')
-})
+// app.get('/about', (req, res) => {
+//   res.send('This is my about route..... ')
+// })
 
 // Export the Express API
 // module.exports = app
