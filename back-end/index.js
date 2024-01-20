@@ -18,11 +18,6 @@ db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', () => {
   console.log('Connected to MongoDB');
 });
-// index.js
-app.listen(PORT, () => {
-  console.log(`API listening on PORT ${PORT} `)
-})
-
 app.get('/', (req, res) => {
   res.send('Hey this is my API running 🥳')
 })
