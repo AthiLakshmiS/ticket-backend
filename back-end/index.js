@@ -33,8 +33,8 @@ app.get('/', (req, res) => {
 })
 
 // Routers
-app.use('/api/support-agents', userRoutes);
-app.use('/api/assigned-users', userRoutes);
-app.use('/api/support-tickets', ticketRoutes);
+// app.use('/api/support-agents', userRoutes);
+// app.use('/api/assigned-users', userRoutes);
+// app.use('/api/support-tickets', ticketRoutes);
 
 module.exports = app;
