@@ -27,10 +27,10 @@ app.listen(PORT, () => {
   console.log('Server is running on http://localhost:${PORT}');
 });
 
-app.get('/', (req, res) => {
-  console.log('API is working fine..')
-  res.send('API Endpoint for Ticket Backend')
-})
+// app.get('/', (req, res) => {
+//   console.log('API is working fine..')
+//   res.send('API Endpoint for Ticket Backend')
+// })
 
 // Routers
 app.use('/api/support-tickets', ticketRoutes);
