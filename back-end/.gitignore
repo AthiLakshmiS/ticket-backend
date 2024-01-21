@@ -1,10 +1,6 @@
 # Dependency directories
-node_modules/
+node_modules
 npm-debug.log
-yarn-error.log
-
-# Optional: Uncomment the following line if you're using yarn v2+
-.yarn/cache/
 
 # Environment variables
 .env

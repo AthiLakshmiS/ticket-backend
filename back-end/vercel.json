@@ -1,7 +1,17 @@
 {
+    "version": 2,
+    "builds": [
+      {
+        "src": "build/*",
+        "use": "@vercel/node20"
+      }
+    ],
+    "routes": [
+      { "handle": "vercel", "src": "/(.*)" }
+    ],
     "functions": {
       "api/**/*.js": {
-        "runtime": "nodejs20.x"
+        "runtime": "nodejs20"
       }
     }
 }
