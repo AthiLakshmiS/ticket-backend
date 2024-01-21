@@ -1,6 +1,5 @@
 const User = require("../models/userModel");
 const Ticket = require("../models/ticketModel");
-const bcrypt = require("bcrypt");
 
 module.exports.userUpdate = async (req, res, next) => {
     const userCreation = new User(req.body)
